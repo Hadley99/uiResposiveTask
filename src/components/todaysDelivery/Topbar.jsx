@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import Menu from "../util/Menu";
+
+const selectList = [
+  { value: "allOrders", displayTitle: "All Orders" },
+  { value: "pending", displayTitle: "Pending" },
+  { value: "delivered", displayTitle: "Delivered" },
+];
 
 const Topbar = () => {
+  const [selectedValue, setSelectedValue] = useState(selectList[0]);
+
   return (
     <div className="flex justify-between items-center">
       <h2 className="font-medium text-xl">Today's Delivery</h2>
@@ -12,12 +21,18 @@ const Topbar = () => {
             placeholder="Search Here"
           />
         </div>
-        <div>
-          <select className="focus:outline-none px-3 py-1.5 border appearance-none font-medium border-solid border-gray-300 text-gray-700 bg-white rounded-lg ">
+        <div className="relative">
+          <Menu
+            setSelectedValue={setSelectedValue}
+            selectList={selectList}
+            displayValue={selectedValue.displayTitle}
+            offsetValue={5}
+          />
+          {/* <select className="focus:outline-none px-3 py-1.5 border appearance-none font-medium border-solid border-gray-300 text-gray-700 bg-white rounded-lg ">
             <option value="allorder">All Order</option>
             <option value="xyz">xyz</option>
             <option value="zyx">zyx</option>
-          </select>
+          </select> */}
         </div>
       </div>
     </div>

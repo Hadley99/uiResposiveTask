@@ -19,7 +19,7 @@ const App = () => {
     <>
       <div className="bg-primary h-2/5 absolute -z-50 top-0 left-0 right-0"></div>
       {/* main content */}
-      <main className="container    px-4 ">
+      <main className="px-4">
         <div className="flex md:space-x-4 ">
           <section className="md:flex hidden ">
             <Sidebar open={open} />
@@ -34,7 +34,7 @@ const App = () => {
             </>
             {/* <div className="grid grid-cols-3 gap-4"> */}
             <div className="md:flex md:space-x-4">
-              <div className="md:grow">
+              <div className="md:grow ">
                 <TodaysDelivery />
               </div>
               <div>

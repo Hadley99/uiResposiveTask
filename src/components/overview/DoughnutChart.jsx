@@ -39,9 +39,7 @@ const DoughnutChart = () => {
   return (
     <>
       <h2 className="font-medium text-xl mb-3">Overview</h2>
-      <div className="border-rose-700 border-1 border  ">
-        <Doughnut data={data} options={options} />
-      </div>
+      <Doughnut data={data} options={options} />
     </>
   );
 };

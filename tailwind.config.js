@@ -2,10 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    container: {
-      center: true,
-    },
-
     extend: {
       colors: {
         primary: "#0083ff",
@@ -18,7 +14,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 };
 // screens: {
 //   xs: "0px",
@@ -26,4 +21,8 @@ module.exports = {
 //   md: "900px",
 //   lg: "1200px",
 //   xl: "1536px",
+// },
+// container: {
+//   center: true,
+//   padding: "16px",
 // },
