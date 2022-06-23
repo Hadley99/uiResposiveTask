@@ -20,8 +20,8 @@ const App = () => {
         <div className="flex md:space-x-4 ">
           {/* <section className="md:flex hidden "> */}
           <section
-            className={`md:flex block absolute z-50 md:static ${
-              open ? "top-0 left-0" : " -top-full -left-full"
+            className={`md:flex block fixed z-50 md:static ${
+              open ? "top-0 left-0 " : " -top-full -left-full "
             } `}
           >
             <Sidebar open={open} toggleOpen={toggleOpen} />
