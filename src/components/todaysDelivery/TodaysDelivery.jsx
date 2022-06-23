@@ -1,0 +1,14 @@
+import React from "react";
+import Orders from "./Orders";
+import Topbar from "./Topbar";
+
+const TodaysDelivery = () => {
+  return (
+    <div className="mt-4 bg-white rounded-2xl  p-4 px-0 sm:px-4">
+      <Topbar />
+      <Orders />
+    </div>
+  );
+};
+
+export default TodaysDelivery;
