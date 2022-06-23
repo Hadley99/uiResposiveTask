@@ -12,7 +12,6 @@ const Menu = ({
   const [open, setOpen] = useState(false);
   const [anchorElm, setAnchorElm] = useState(null);
   const toggleShow = (e) => {
-    // console.log(e.currentTarget.getBoundingClientRect(), e.currentTarget);
     setAnchorElm(e.currentTarget.getBoundingClientRect());
     setOpen((prev) => !prev);
   };

@@ -18,7 +18,6 @@ const App = () => {
       {/* main content */}
       <main className="px-4">
         <div className="flex md:space-x-4 ">
-          {/* <section className="md:flex hidden "> */}
           <section
             className={`md:flex block fixed z-50 md:static ${
               open ? "top-0 left-0 " : " -top-full -left-full "
@@ -34,7 +33,7 @@ const App = () => {
             <>
               <OrderDetails />
             </>
-            {/* <div className="grid grid-cols-3 gap-4"> */}
+
             <div className="md:flex md:space-x-4">
               <div className="md:grow ">
                 <TodaysDelivery />

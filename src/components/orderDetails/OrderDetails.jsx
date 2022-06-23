@@ -13,4 +13,3 @@ const OrderDetails = () => {
 };
 
 export default OrderDetails;
-// sm:mx-0 mx-4

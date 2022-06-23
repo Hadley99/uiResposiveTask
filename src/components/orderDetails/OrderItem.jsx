@@ -13,7 +13,6 @@ const OrderItem = ({ item }) => {
           className={`p-4 m-4 rounded-full`}
         >
           {item.icon}
-          {/* <BasketIcon size="1.3em" className="fill-white " /> */}
         </div>
       </div>
     </div>
