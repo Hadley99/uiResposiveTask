@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { ArrowIcon } from "../../icons/NavbarIcons";
 
-const Menu = ({ displayValue, selectList, setSelectedValue, offsetValue }) => {
+const Menu = ({
+  displayValue,
+  selectList,
+  setSelectedValue,
+  offsetValue,
+  listStyles,
+  buttonStyles,
+}) => {
   const [open, setOpen] = useState(false);
   const [anchorElm, setAnchorElm] = useState(null);
   const toggleShow = (e) => {
@@ -16,10 +23,7 @@ const Menu = ({ displayValue, selectList, setSelectedValue, offsetValue }) => {
 
   return (
     <>
-      <button
-        onClick={toggleShow}
-        className="bg-white ml-3 flex items-center font-medium text-primary text-sm p-1 px-2 rounded-md"
-      >
+      <button onClick={toggleShow} className={buttonStyles}>
         {displayValue}
         <span>
           <ArrowIcon
@@ -41,7 +45,7 @@ const Menu = ({ displayValue, selectList, setSelectedValue, offsetValue }) => {
           {selectList.map((item, i) => (
             <option
               key={i}
-              className="p-1 px-2 hover:bg-primary text-primary font-medium hover:text-white  rounded-md"
+              className={listStyles}
               value={item.value}
               onClick={(e) => {
                 close();

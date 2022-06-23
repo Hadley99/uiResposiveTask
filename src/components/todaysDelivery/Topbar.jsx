@@ -27,6 +27,8 @@ const Topbar = () => {
             selectList={selectList}
             displayValue={selectedValue.displayTitle}
             offsetValue={5}
+            buttonStyles="bg-white ml-3 flex items-center font-medium  text-sm p-1 px-2 rounded-md"
+            listStyles="p-1 px-2 hover:bg-primary  font-medium hover:text-white  rounded-md"
           />
           {/* <select className="focus:outline-none px-3 py-1.5 border appearance-none font-medium border-solid border-gray-300 text-gray-700 bg-white rounded-lg ">
             <option value="allorder">All Order</option>

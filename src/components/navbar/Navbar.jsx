@@ -34,6 +34,8 @@ const Navbar = ({ toggleOpen }) => {
             selectList={selectList}
             displayValue={selectedValue.displayTitle}
             offsetValue={5}
+            buttonStyles="bg-white ml-3 flex items-center font-medium text-primary text-sm p-1 px-2 rounded-md"
+            listStyles="p-1 px-2 hover:bg-primary text-primary font-medium hover:text-white  rounded-md"
           />
         </div>
         <button
