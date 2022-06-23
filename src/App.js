@@ -9,20 +9,22 @@ import TodaysDelivery from "./components/todaysDelivery/TodaysDelivery";
 const App = () => {
   const [open, setOpen] = useState(false);
   const toggleOpen = () => {
-    console.log(open);
     setOpen((prev) => !prev);
   };
-  //TODO
-  // change colors to #asdad
 
   return (
     <>
-      <div className="bg-primary h-2/5 absolute -z-50 top-0 left-0 right-0"></div>
+      <div className="bg-primary h-2/5 absolute -z-50 top-0 left-0 right-0 "></div>
       {/* main content */}
       <main className="px-4">
         <div className="flex md:space-x-4 ">
-          <section className="md:flex hidden ">
-            <Sidebar open={open} />
+          {/* <section className="md:flex hidden "> */}
+          <section
+            className={`md:flex block absolute z-50 md:static ${
+              open ? "top-0 left-0" : " -top-full -left-full"
+            } `}
+          >
+            <Sidebar open={open} toggleOpen={toggleOpen} />
           </section>
 
           <section className="md:grow">
