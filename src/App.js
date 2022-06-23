@@ -16,7 +16,7 @@ const App = () => {
     <>
       <div className="bg-primary h-2/5 absolute -z-50 top-0 left-0 right-0 "></div>
       {/* main content */}
-      <main className="px-4">
+      <main className="px-4 pb-4 md:pb-0">
         <div className="flex md:space-x-4 ">
           <section
             className={`md:flex block fixed z-50 md:static ${
