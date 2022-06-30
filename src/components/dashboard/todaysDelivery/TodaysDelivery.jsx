@@ -4,7 +4,7 @@ import Topbar from "./Topbar";
 
 const TodaysDelivery = () => {
   return (
-    <div className="mt-4 bg-white rounded-2xl  p-4  drop-shadow-xl ">
+    <div className="mt-4 bg-white rounded-2xl p-4 drop-shadow-xl ">
       <Topbar />
       <Orders />
     </div>

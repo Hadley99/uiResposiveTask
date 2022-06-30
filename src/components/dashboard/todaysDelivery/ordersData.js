@@ -2,7 +2,7 @@ import {
   CapIcon,
   SneakersIcon,
   TshirtIcons,
-} from "../../icons/TodaysDeliveryIcons";
+} from "../../../icons/TodaysDeliveryIcons";
 
 export const ordersData = [
   {

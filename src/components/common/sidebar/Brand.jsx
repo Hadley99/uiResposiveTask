@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrandIcon, CLoseIcon } from "../../icons/SidebarIcons";
+import { BrandIcon, CLoseIcon } from "../../../icons/SidebarIcons";
 
 const Brand = ({ open, toggleOpen }) => {
   return (

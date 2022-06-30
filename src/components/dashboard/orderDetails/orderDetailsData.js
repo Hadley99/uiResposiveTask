@@ -1,5 +1,9 @@
-import { LikeIcon, ReactIcon, TickIcon } from "../../icons/OrderDetailsIcons";
-import { BasketIcon } from "../../icons/SidebarIcons";
+import {
+  LikeIcon,
+  ReactIcon,
+  TickIcon,
+} from "../../../icons/OrderDetailsIcons";
+import { BasketIcon } from "../../../icons/SidebarIcons";
 
 export const orderDetailsData = [
   {

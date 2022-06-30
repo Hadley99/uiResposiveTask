@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { AddIcon, BarMenuIcon } from "../../icons/NavbarIcons";
-import { PriceTagIcon, ProfileIcon } from "../../icons/SidebarIcons";
-import Menu from "../util/Menu";
+import { AddIcon, BarMenuIcon } from "../../../icons/NavbarIcons";
+import { PriceTagIcon, ProfileIcon } from "../../../icons/SidebarIcons";
+import Menu from "../../util/Menu";
 
 const selectList = [
   { value: "english", displayTitle: "English" },
