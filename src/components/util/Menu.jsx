@@ -38,6 +38,7 @@ const Menu = ({
             position: "absolute",
             top: anchorElm.height + offsetValue,
             left: 0,
+            zIndex: 1000,
           }}
           className="bg-white   drop-shadow-xl  p-2 rounded-md font-medium text-sm cursor-pointer"
         >

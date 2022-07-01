@@ -9,7 +9,7 @@ const selectList = [
   { value: "hindi", displayTitle: "Hindi" },
 ];
 
-const Navbar = ({ toggleOpen }) => {
+const Navbar = ({ toggleOpen, open }) => {
   const [selectedValue, setSelectedValue] = useState(selectList[0]);
   return (
     <div className="flex w-full justify-between  mt-4  items-center">

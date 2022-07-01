@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const MenuItem = ({ icon, title, open, link }) => {
+const MenuItem = ({ icon, title, open, link, toggleOpen }) => {
   return (
     <NavLink
+      onClick={toggleOpen}
       to={link}
       className={({ isActive }) =>
         isActive
